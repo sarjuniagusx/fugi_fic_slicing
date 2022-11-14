@@ -4,6 +4,7 @@ import 'package:fugi_fic_slicing_furniture/app/screens/category/category_screen.
 import 'package:fugi_fic_slicing_furniture/app/screens/category/widgets/furniture_grid_item.dart';
 import 'package:fugi_fic_slicing_furniture/app/screens/home/widgets/category_card.dart';
 import 'package:fugi_fic_slicing_furniture/app/screens/home/widgets/category_selector.dart';
+import 'package:fugi_fic_slicing_furniture/app/screens/home/widgets/header.dart';
 import 'package:fugi_fic_slicing_furniture/app/screens/home/widgets/section.dart';
 import 'package:fugi_fic_slicing_furniture/app/screens/product_detail/product_detail_screen.dart';
 import 'package:fugi_fic_slicing_furniture/app/widgets/app_bottom_navigation.dart';
@@ -160,6 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
           slivers: <Widget>[
             SliverList(
               delegate: SliverChildListDelegate([
+                Header(),
                 const CategorySelector(),
                 Section(
                   'Recommended Furnitures',
